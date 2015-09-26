@@ -12,7 +12,7 @@ You need to have NPM version 3 installed.
 
 To add new dependency, just add it to `package.json`.
 
-To generate bundle run `make`.
+To generate bundle, run `make`.
 
-To delete generated files run `make clean`.
+To delete generated files, run `make clean`.
 
