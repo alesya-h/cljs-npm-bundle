@@ -1,0 +1,21 @@
+{
+    "name": "make-npm-deps",
+    "version": "1.0.0",
+    "description": "package NPM deps to use via foreign-deps in ClojureScript",
+    "dependencies": {
+        "babel": "5.8.23",
+        "react-masonry-mixin": "0.5.7",
+        "element-resize-event": "2.0.3",
+        "react-textarea-autosize": "2.5.2"
+    },
+    "//": {
+        "this section is for lines": "which you'd wish to comment-out",
+        "react-growing-textarea": "0.0.2"
+    },
+    "devDependencies": {
+        "browserify": "11.2.0",
+        "uglify-js": "2.4.24",
+        "browserify-shim": "3.8.10",
+        "reactify": "1.1.1"
+    }
+}
