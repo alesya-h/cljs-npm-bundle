@@ -9,7 +9,7 @@ input.js: node_modules gen_input.js
 	node gen_input.js
 
 bundle.js: input.js
-	node_modules/browserify/bin/cmd.js input.js -o bundle.js -g browserify-shim -g reactify
+	node_modules/browserify/bin/cmd.js input.js -o bundle.js -g browserify-shim -g [ babelify --presets [ react ] ]
 
 bundle.min.js: bundle.js
 	node_modules/uglify-js/bin/uglifyjs bundle.js -o bundle.min.js
