@@ -14,8 +14,10 @@ bundle.js: input.js
 bundle.min.js: bundle.js
 	node_modules/uglify-js/bin/uglifyjs bundle.js -o bundle.min.js
 
-clean:
-	rm -rf node_modules
-	rm -f input.js
+clean: cleanup
 	rm -f bundle.js
 	rm -f bundle.min.js
+
+cleanup:
+	rm -rf node_modules
+	rm -f input.js
